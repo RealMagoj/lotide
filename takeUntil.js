@@ -23,13 +23,12 @@ const eqArrays = (array1, array2)=> {
 const takeUntil = function(array, callback) {
   let results = [];
   for (const item of array) {
-    if (callback(item)) {
-      break;
-    } else {
+    if (!callback(item)) {
       results.push(item);
+    } else {
+      return results;
     }
   }
-  return results;
 };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
