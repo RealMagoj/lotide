@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@realmagoj/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library",
   "main": "",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/RealMagoj/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "RealMagoj",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RealMagoj/lotide/issues"
