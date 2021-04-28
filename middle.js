@@ -1,25 +1,3 @@
-// FUNCTION IMPLEMENTATION
-const assertArraysEqual = (actual, expected)=> {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅ Assertion Passed: "${actual}" === "${expected}"`);
-  } else {
-    console.log(`🛑 Assertion Failed: "${actual}" !== "${expected}"`);
-  }
-};
-
-const eqArrays = (array1, array2)=> {
-  if (array1.length === array2.length) {
-    for (let item in array1) {
-      if (array1[item] !== array2[item]) {
-        return false;
-      }
-    }
-    return true;
-  } else {
-    return false;
-  }
-}
-
 const middle = (array)=> {
   const result = [];
   if (array.length > 2) {
@@ -33,9 +11,4 @@ const middle = (array)=> {
   return result;
 }
 
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+module.exports = middle;
